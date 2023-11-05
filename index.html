@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curency-converter</title>
+    <link href="CC.CSS/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="CC.JS/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body class="body__background">
+    <div class="container">
+        <form class="js-form">
+            <fieldset class="form__fieldset">
+                <legend class="legendText">Curency converter 4U</legend>
+                <p>
+
+                    <label>
+                        <span class="form__labelText">Your currency details</span>
+                    </label>
+                <div>
+                    <input class="js-form__input form__input" name="in" type="number" min="0.10" step="0.1" max="20000"
+                        required><select class="js-select__in input__select" name="curency" required>
+                        <option>PLN</option>
+                        <option>EUR</option>
+                        <option>USD</option>
+                    </select>
+                </div>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labelText">Convert to</span>
+                    </label>
+                <div>
+                    <select class="js-select__out input__select" required readonly name="curency" value="EUR">
+                        <option>PLN</option>
+                        <option>EUR</option>
+                        <option>USD</option>
+                    </select>
+                    <!-- Pniżej nieprawidłowy przykład - nie powinien wynik pojawiać się w input - szkoda czasu na zmany i rozkminy -->
+                    <input class="js-form__output form__output" name="out" type="number" readonly>
+                </div>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

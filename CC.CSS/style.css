@@ -1,0 +1,77 @@
+.html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    width: 400px;
+    margin: 50px auto;
+    background-color: wheat;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 15px 1px goldenrod;
+}
+
+.form__fieldset {
+    text-align: center;
+    line-height: 10%;
+    border: none;
+    border-radius: 5px;
+    border-color: rgb(215, 183, 101);
+
+    margin: 0%;
+}
+
+.legendText {
+    color: rgb(86, 62, 2);
+    background-color: rgb(215, 183, 101);
+    border-radius: 5px;
+    text-align: start;
+    box-shadow: 0px 0px 6px 6px rgb(215, 183, 101);
+}
+
+.form__labelText {
+    width: 200px;
+    display: inline-block;
+}
+
+.form__input {
+    width: 100px;
+    height: 21px;
+}
+
+.form__output {
+    width: 100px;
+    margin: none;
+}
+
+.input__select {
+    padding: none;
+    margin: 1px;
+}
+
+.form__output:focus {
+    outline: none;
+}
+
+.input__select:hover {
+    cursor: pointer;
+}
+
+.form__output:hover {
+    cursor: default;
+}
+
+.body__background {
+    background-image: url("../images/photo-1428094479093-8973a318bd76.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% cover;
+}
